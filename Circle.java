@@ -22,18 +22,17 @@ public class Circle extends Shape {
 
     @Override
     public double getArea() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        return 2 * 3.14f * radius;
-    }
-
-    @Override
-    public double getSquare() {
         return 3.14f * radius * radius;
     }
 
     @Override
+    public double getPerimeter() {
+        return 2 * 3.14f * radius;
+    }
+
+    @Override
     public String toString() {
-        return "Area - " ;
+        return "Circle: Area - " + getArea() + ", perimetr - " + getPerimeter();
     }
     
     
